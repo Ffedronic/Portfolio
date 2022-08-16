@@ -1,0 +1,24 @@
+import { ToggleHandler } from "../../helpers/Layout-utils";
+
+function CloseNavButton(props: ToggleHandler) {
+  const { toggleHandler } = props;
+
+  return (
+    <div className="z-10" onClick={toggleHandler}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="#64ffda"
+      >
+        <path
+          fillRule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </div>
+  );
+}
+
+export default CloseNavButton;

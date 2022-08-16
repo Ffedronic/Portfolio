@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:Lato, sans-serif;
+  background-color: #0a192f;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
