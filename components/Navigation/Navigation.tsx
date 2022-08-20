@@ -1,5 +1,4 @@
 import { menu } from "../../helpers/Layout-utils";
-import Button from "librairies/Button/Button";
 import NavigationItem from "../NavigationItem/NavigationItem";
 
 function Navigation() {
@@ -15,8 +14,15 @@ function Navigation() {
             toggleHandler={function () {}}
           />
         ))}
+
         <li>
-          <Button href="/documents/resume.pdf" download={true} title="resume" />
+          <a
+            href="/documents/resume.pdf"
+            download
+            className="text-green border-2 border-green p-2 font-montserrat rounded-xl hover:bg-green hover:text-navy md:text-xl"
+          >
+            Resume
+          </a>
         </li>
       </ul>
     </div>

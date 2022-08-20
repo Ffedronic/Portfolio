@@ -1,6 +1,5 @@
 import { ToggleHandler, menu } from "../../helpers/Layout-utils";
 import NavigationItem from "../NavigationItem/NavigationItem";
-import Button from "librairies/Button/Button";
 
 function MobileNavigation(props: ToggleHandler) {
   const { toggleHandler } = props;
@@ -17,7 +16,13 @@ function MobileNavigation(props: ToggleHandler) {
         />
       ))}
       <li>
-        <Button href="/documents/resume.pdf" download={true} title="resume" />
+        <a
+          href="/documents/resume.pdf"
+          download
+          className="text-green border-2 border-green p-2 font-montserrat rounded-xl hover:bg-green hover:text-navy md:text-xl"
+        >
+          Resume
+        </a>
       </li>
     </ul>
   );
