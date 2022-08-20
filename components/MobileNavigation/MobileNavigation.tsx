@@ -1,6 +1,6 @@
 import { ToggleHandler, menu } from "../../helpers/Layout-utils";
 import NavigationItem from "../NavigationItem/NavigationItem";
-import ResumeButton from "../ResumeButton/ResumeButton";
+import Button from "librairies/Button/Button";
 
 function MobileNavigation(props: ToggleHandler) {
   const { toggleHandler } = props;
@@ -17,7 +17,7 @@ function MobileNavigation(props: ToggleHandler) {
         />
       ))}
       <li>
-        <ResumeButton />
+        <Button href="/documents/resume.pdf" download={true} title="resume" />
       </li>
     </ul>
   );

@@ -1,12 +1,11 @@
+import HeroTitle from "../HeroTitle/HeroTitle";
+import HeroContent from "../HeroContent/HeroContent";
+
 function Hero() {
   return (
-    <section className="">
-      <h1 className="text-green text-lg">Hi, I am</h1>
-      <p className=" text-slate-400 font-bold text-3xl">Felix Fedronic.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime a impedit consectetur unde obcaecati. Nesciunt necessitatibus dolores nisi omnis voluptate, itaque esse. Impedit fugiat iure deleniti quis quas atque animi?</p>
-      <a href="#">
-        Contact Me
-      </a>
+    <section className="pt-20 text-center md:flex md:flex-col md:justify-center md:items-center md:pt-40">
+      <HeroTitle/>
+      <HeroContent/>
     </section>
   );
 }

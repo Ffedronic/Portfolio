@@ -1,6 +1,6 @@
 import { menu } from "../../helpers/Layout-utils";
+import Button from "librairies/Button/Button";
 import NavigationItem from "../NavigationItem/NavigationItem";
-import ResumeButton from "../ResumeButton/ResumeButton";
 
 function Navigation() {
   return (
@@ -12,11 +12,11 @@ function Navigation() {
             href={item.href}
             level={item.level}
             title={item.title}
-            toggleHandler={function(){}}
+            toggleHandler={function () {}}
           />
         ))}
         <li>
-          <ResumeButton />
+          <Button href="/documents/resume.pdf" download={true} title="resume" />
         </li>
       </ul>
     </div>
