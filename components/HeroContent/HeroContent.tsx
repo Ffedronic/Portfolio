@@ -1,3 +1,5 @@
+import ContactButton from "librairies/ContactButton/ContactButton";
+
 function HeroContent() {
   return (
     <div className="p-2 md:w-3/4 lg:w-2/4">
@@ -7,12 +9,7 @@ function HeroContent() {
         omnis voluptate, itaque esse. Impedit fugiat iure deleniti quis quas
         atque animi?
       </p>
-      <a
-        href="#"
-        className="text-green border-2 border-green p-2 font-montserrat rounded-xl hover:bg-green hover:text-navy md:text-xl"
-      >
-        Contact Me
-      </a>
+      <ContactButton />
     </div>
   );
 }
