@@ -4,6 +4,7 @@ import { useState } from "react";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import MobileNavigation from "../MobileNavigation/MobileNavigation";
+import Hero from "../Hero/Hero";
 
 export default function Layout(props: any) {
   const [active, setActive] = useState(false);
@@ -58,7 +59,7 @@ export default function Layout(props: any) {
         </div>
       </nav>
       <div>{active && <MobileNavigation toggleHandler={toggleHandler} />}</div>
-
+      <Hero />
       {/**Comments */}
       <main className=" h-screen px-5" onClick={closeNavbar}>
         {props.children}
